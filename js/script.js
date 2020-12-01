@@ -35,13 +35,13 @@ function rememberMyFilms () {
         }
     }
 }
-// rememberMyFilms();
+rememberMyFilms();
 
 
 function detectPersonalLevel() {
     if (personalMovieDB.count < 10) {
         console.log('Переглянуто мало фільмів');
-    } else if (personalMovieDB.count >= 10 && personalMovieDB < 30) {
+    } else if (personalMovieDB.count >= 10 && personalMovieDB.count < 30) {
         console.log('Ви класичний глядач');
     } else if (personalMovieDB.count >= 30) {
         console.log('Ви кіноман');
@@ -49,7 +49,7 @@ function detectPersonalLevel() {
         console.log('Сталася помилка');
     }
 }
-// detectPersonalLevel();
+detectPersonalLevel();
 
 
 function showMyDB(hidden) {
